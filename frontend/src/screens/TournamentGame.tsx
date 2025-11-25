@@ -129,7 +129,7 @@ const TournamentGame: React.FC = () => {
       </Paper>
 
       <Grid container spacing={4} justifyContent="center">
-        <Grid item xs={12} md={5}>
+        <Grid xs={12} md={5}>
           <Card 
             sx={{ 
               cursor: hasVoted ? 'default' : 'pointer',
@@ -172,13 +172,13 @@ const TournamentGame: React.FC = () => {
           </Card>
         </Grid>
 
-        <Grid item xs={12} md={2} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <Grid xs={12} md={2} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <Typography variant="h3" sx={{ fontWeight: 'bold' }}>
             VS
           </Typography>
         </Grid>
 
-        <Grid item xs={12} md={5}>
+        <Grid xs={12} md={5}>
           <Card 
             sx={{ 
               cursor: hasVoted ? 'default' : 'pointer',

@@ -57,7 +57,7 @@ const CompetitionDetail: React.FC<CompetitionDetailProps> = ({
         <Grid container spacing={1}>
           {/* This would show actual items when we fetch full details */}
           {[1, 2, 3, 4, 5, 6].map((i) => (
-            <Grid item xs={2} key={i}>
+            <Grid xs={2} key={i}>
               <Box
                 sx={{
                   width: '100%',

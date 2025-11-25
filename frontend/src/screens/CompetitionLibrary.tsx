@@ -18,7 +18,7 @@ import {
 import SearchIcon from '@mui/icons-material/Search';
 import AddIcon from '@mui/icons-material/Add';
 import { getCompetitions } from '../api/competitions';
-import CompetitionDetail from '../components/CompetitionDetail';
+import CompetitionDetail from './CompetitionDetail';
 import CreateSessionDialog from '../components/CreateSessionDialog';
 
 interface Competition {
@@ -104,8 +104,8 @@ const CompetitionLibrary: React.FC = () => {
 
         <Grid container spacing={3}>
           {competitions.map((competition) => (
-            <Grid item xs={12} sm={6} md={4} key={competition.id}>
-              <Card 
+            <Grid xs={12} sm={6} md={4} key={competition.id}>
+              <Card
                 sx={{ 
                   cursor: 'pointer',
                   transition: 'transform 0.2s',
